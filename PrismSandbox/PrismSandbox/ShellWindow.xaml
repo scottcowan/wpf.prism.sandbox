@@ -1,0 +1,40 @@
+﻿<Window x:Class="PrismSandbox.ShellWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:prism="http://www.codeplex.com/prism"
+        Title="ShellWindow" Height="350" Width="525">
+    <!-- Client Area -->
+    <Grid x:Name="ClientArea" Grid.Row="1">
+
+        <!-- Grid Layout -->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition x:Name="NavigationColumn" Width="0.200*"/>
+            <ColumnDefinition x:Name="WorkspaceColumn" Width="0.600*"/>
+        </Grid.ColumnDefinitions>
+        <GridSplitter HorizontalAlignment="Left" Width="5" Grid.Column="1"/>
+
+        <!-- Navigation Pane Grid -->
+        <Grid x:Name="NavigationPane">
+
+            <!-- Grid Layout -->
+            <Grid.RowDefinitions>
+                <RowDefinition x:Name="Navigator" Height="*"/>
+                <RowDefinition x:Name="TaskButtons" Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <!-- Navigator Region -->
+            <ContentControl x:Name="NavigatorRegion" Grid.Row="0" prism:RegionManager.RegionName="NavigatorRegion" />
+
+            <!-- Task Button Region -->
+            <StackPanel Grid.Row="1" HorizontalAlignment="Stretch" VerticalAlignment="Top" Margin="0,0,0,5">
+                <Border BorderBrush="DarkGray" BorderThickness="1" Height="5" Width="Auto" HorizontalAlignment="Stretch" Margin="5,0,5,5"/>
+                <ItemsControl x:Name="TaskButtonRegion" prism:RegionManager.RegionName="TaskButtonRegion" HorizontalAlignment="Stretch" VerticalAlignment="Top" />
+            </StackPanel>
+
+        </Grid>
+
+        <!-- Workspace Region-->
+        <ContentControl x:Name="WorkspaceRegion" Grid.Column="1" prism:RegionManager.RegionName="WorkspaceRegion" />
+
+    </Grid>
+</Window>
