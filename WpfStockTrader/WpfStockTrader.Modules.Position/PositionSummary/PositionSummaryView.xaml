@@ -7,5 +7,17 @@
              d:DesignHeight="300" d:DesignWidth="300">
     <Grid>
         <TextBlock>Position Summary</TextBlock>
+        <ListView ItemsSource="{Binding Path=Position.Items}" 
+                  SelectedItem="{Binding Path=CurrentPositionSummaryItem, Mode=TwoWay}"  
+                  AlternationCount="2"
+                  IsSynchronizedWithCurrentItem="True">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Symbol" 
+            		DisplayMemberBinding="{Binding Path=TickerSymbol}" 
+            		Width="65"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
     </Grid>
 </UserControl>

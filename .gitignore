@@ -1,0 +1,15 @@
+/WpfStockTrader/*.user
+/WpfStockTrader/*.suo
+/WpfStockTrader/_ReSharper.WpfStockTrader
+/WpfStockTrader/WpfStockTrader/bin
+/WpfStockTrader/WpfStockTrader/obj
+/WpfStockTrader/WpfStockTrader.Common/obj
+/WpfStockTrader/WpfStockTrader.Common/bin
+/WpfStockTrader/WpfStockTrader.Modules.Market/bin
+/WpfStockTrader/WpfStockTrader.Modules.Market/obj
+/WpfStockTrader/WpfStockTrader.Modules.News/obj
+/WpfStockTrader/WpfStockTrader.Modules.News/bin
+/WpfStockTrader/WpfStockTrader.Modules.Position/bin
+/WpfStockTrader/WpfStockTrader.Modules.Position/obj
+/WpfStockTrader/WpfStockTrader.Modules.Watch/bin
+/WpfStockTrader/WpfStockTrader.Modules.Watch/obj

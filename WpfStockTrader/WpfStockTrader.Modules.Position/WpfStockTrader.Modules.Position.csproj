@@ -68,10 +68,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="PositionModule.cs" />
+    <Compile Include="PositionSummary\IObservablePosition.cs" />
+    <Compile Include="PositionSummary\ObservablePosition.cs" />
     <Compile Include="PositionSummary\PositionPieChartView.xaml.cs">
       <DependentUpon>PositionPieChartView.xaml</DependentUpon>
     </Compile>
     <Compile Include="PositionSummary\PositionPieChartViewModel.cs" />
+    <Compile Include="PositionSummary\PositionSummaryItem.cs" />
     <Compile Include="PositionSummary\PositionSummaryViewModel.cs" />
     <Compile Include="PositionSummary\PositionSummaryView.xaml.cs">
       <DependentUpon>PositionSummaryView.xaml</DependentUpon>

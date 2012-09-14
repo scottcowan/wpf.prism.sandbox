@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.Practices.Prism.Modularity;
 using Microsoft.Practices.Prism.Regions;
 using Microsoft.Practices.ServiceLocation;
+using Microsoft.Practices.Unity;
 using WpfStockTrader.Common;
 using WpfStockTrader.Modules.Position.PositionSummary;
 
